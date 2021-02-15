@@ -114,6 +114,7 @@ namespace Hair_Dressing_Appointments_Core_Web_App.Migrations
                         .HasForeignKey("HairDresserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                    
 
                     b.HasOne("Hair_Dressing_Appointments_Core_Web_App.BusinessLayer.HairDressingOption", "HairDressingOption")
                         .WithMany()
